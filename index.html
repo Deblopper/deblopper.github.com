@@ -9,7 +9,7 @@
 
 	<style>
 	body {
-		padding: 15% 0;
+		padding: 10% 0;
 		text-align: center;
 		background: #eee;
 		font-family: Verdana, Geneva, Helvetica, "Helvetica Neue", "Droid Sans", Sans-serif;
@@ -20,20 +20,30 @@
 		font-weight: bold;
 		text-shadow: 0 1px 1px #eef, 0 -1px 0 #333, 0 0 20px #9cf;
 	}
-	h2 {
+	h2, h3 {
 		margin: 0;
+		text-shadow: 0 0 1px #999;
+	}
+	h2 {
 		color: #693;
 		text-transform: uppercase;
-		text-shadow: 0 0 1px #999;
 	}
-	h3 {
-		margin: 0;
-		color: #444;
-		text-shadow: 0 0 1px #999;
+	h3 { color: #444; }
+	h6 { color: #c00; }
+	a {
+		color: #678;
+		padding: 1rem;
+		display: inline-block;
+		text-decoration: none;
+		border: 1px solid;
+		border-color: transparent;
+		border-radius: 3px;
 	}
-	h6 {
-		color: #c00;
+	a:hover {
+		border-color: #aaa;
+		box-shadow: inset 0 0 2px #fff, inset 0 -10px 50px rgba(0,0,0,0.1);
 	}
+	a span { font-size: 0.5rem; }
 	</style>
 
 </head>
@@ -42,7 +52,21 @@
 	<h1>No Entry!</h1>
 	<h2>museum under reconstruction</h2>
 	<h3>please chew on your ticket, and check-back later.</h3>
-	<h6>*Hint: try visiting /[0..3] to get the versions manually, for the time being.</h6>
+	<h6>*Although, I can take you through my archived homepages, for the time being:</h6>
+	<div>
+		<a href="/0" target="_blank">Version 0<br/>
+			<span>2010-12-25 &mdash; 2011-05-15</span>
+		</a>
+		<a href="/1" target="_blank">Version 1<br/>
+			<span>2011-05-16 &mdash; 2012-04-15</span>
+		</a>
+		<a href="/2" target="_blank">Version 2<br/>
+			<span>2012-04-16 &mdash; 2012-06-09</span>
+		</a>
+		<a href="/3" target="_blank">Version 3<br/>
+			<span>2012-06-10 &mdash; till date</span>
+		</a>
+	</div>
 </body>
 
 </html>
